@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: quickcart-product-service
+    runtime: dotnet
+    repo: https://github.com/ShayZaadi/QuickCart
+    branch: main
+    rootDir: src/QuickCart.ProductService
+    buildCommand: dotnet build
+    startCommand: dotnet run --project src/QuickCart.ProductService
+    plan: free
