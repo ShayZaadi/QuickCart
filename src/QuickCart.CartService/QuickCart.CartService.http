@@ -1,0 +1,6 @@
+@QuickCart.CartService_HostAddress = http://localhost:5062
+
+GET {{QuickCart.CartService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

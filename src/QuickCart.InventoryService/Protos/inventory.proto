@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option csharp_namespace = "QuickCart.Inventory"; 
+
+service Inventory {
+  rpc CheckAvailability (ProductRequest) returns (AvailabilityResponse);
+}
+
+message ProductRequest {
+  int32 productId = 1;
+}
+
+message AvailabilityResponse {
+  bool available = 1;
+}
